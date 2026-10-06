@@ -1,7 +1,7 @@
-[gd_scene load_steps=21 format=4]
+[gd_scene format=4 uid="uid://btremuigsooj4"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_ouk20"]
-[ext_resource type="Texture2D" path="res://arte/tiny_ski/tilemap_packed.png" id="2_mae5d"]
+[ext_resource type="Script" uid="uid://cgnd8pahx4g3u" path="res://menu.gd" id="1_ouk20"]
+[ext_resource type="Texture2D" uid="uid://c0334pd7hbm8b" path="res://arte/tiny_ski/tilemap_packed.png" id="2_mae5d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4hy44"]
 texture = ExtResource("2_mae5d")
@@ -237,122 +237,115 @@ corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 
-[node name="Menu" type="Control"]
+[node name="Menu" type="Control" unique_id=1233510080]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource("1_ouk20")
 
-[node name="Fundo" type="TileMapLayer" parent="."]
+[node name="Fundo" type="TileMapLayer" parent="." unique_id=2098553730]
 tile_map_data = PackedByteArray("AAAAAAAAAAAGAAIAAAABAAAAAAAGAAIAAAACAAAAAAAGAAIAAAADAAAAAAAGAAIAAAAEAAAAAAAGAAIAAAAFAAAAAAAGAAIAAAAGAAAAAAAGAAIAAAAHAAAAAAAGAAIAAAAIAAAAAAAGAAIAAAAJAAAAAAAGAAIAAAAKAAAAAAAGAAIAAAALAAAAAAAGAAIAAAAMAAAAAAAGAAIAAAANAAAAAAAGAAIAAAAOAAAAAAAGAAIAAAAPAAAAAAAGAAIAAAAQAAAAAAAGAAIAAAARAAAAAAAGAAIAAAASAAAAAAAGAAIAAAATAAAAAAAGAAIAAAAAAAEAAAAAAAAAAAABAAEAAAAAAAAAAAACAAEAAAAEAAAAAAADAAEAAAACAAAAAAAEAAEAAAACAAAAAAAFAAEAAAABAAAAAAAGAAEAAAAAAAAAAAAHAAEAAAAAAAAAAAAIAAEAAAAAAAAAAAAJAAEAAAAAAAAAAAAKAAEAAAAAAAAAAAALAAEAAAAAAAAAAAAMAAEAAAAAAAAAAAANAAEAAAAAAAAAAAAOAAEAAAAEAAAAAAAPAAEAAAACAAAAAAAQAAEAAAACAAAAAAARAAEAAAABAAAAAAASAAEAAAAAAAAAAAATAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAACAAIAAAAEAAAAAAADAAIAAAACAAAAAAAEAAIAAAACAAAAAAAFAAIAAAABAAAAAAAGAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAAIAAIAAAAAAAAAAAAJAAIAAAAAAAAAAAAKAAIAAAAAAAAAAAALAAIAAAAAAAAAAAAMAAIAAAAAAAAAAAANAAIAAAAAAAAAAAAOAAIAAAAEAAAAAAAPAAIAAAACAAAAAAAQAAIAAAACAAAAAAARAAIAAAABAAAAAAASAAIAAAAAAAAAAAATAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAEAAAAAAADAAMAAAACAAAAAAAEAAMAAAACAAAAAAAFAAMAAAABAAAAAAAGAAMAAAAAAAAAAAAHAAMAAAAAAAAAAAAIAAMAAAAAAAAAAAAJAAMAAAAAAAAAAAAKAAMAAAAAAAAAAAALAAMAAAAAAAAAAAAMAAMAAAAAAAAAAAANAAMAAAAAAAAAAAAOAAMAAAAEAAAAAAAPAAMAAAACAAAAAAAQAAMAAAACAAAAAAARAAMAAAABAAAAAAASAAMAAAAAAAAAAAATAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAQAAAAAAAAAAAACAAQAAAAEAAAAAAADAAQAAAACAAAAAAAEAAQAAAACAAAAAAAFAAQAAAABAAAAAAAGAAQAAAAAAAAAAAAHAAQAAAAAAAAAAAAIAAQAAAAAAAAAAAAJAAQAAAAAAAAAAAAKAAQAAAAAAAAAAAALAAQAAAAAAAAAAAAMAAQAAAAAAAAAAAANAAQAAAAAAAAAAAAOAAQAAAAEAAAAAAAPAAQAAAACAAAAAAAQAAQAAAACAAAAAAARAAQAAAABAAAAAAASAAQAAAAAAAAAAAATAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAABAAUAAAAAAAAAAAACAAUAAAAEAAAAAAADAAUAAAACAAAAAAAEAAUAAAACAAAAAAAFAAUAAAABAAAAAAAGAAUAAAAAAAAAAAAHAAUAAAAAAAAAAAAIAAUAAAAAAAAAAAAJAAUAAAAAAAAAAAAKAAUAAAAAAAAAAAALAAUAAAAAAAAAAAAMAAUAAAAAAAAAAAANAAUAAAAAAAAAAAAOAAUAAAAEAAAAAAAPAAUAAAACAAAAAAAQAAUAAAACAAAAAAARAAUAAAABAAAAAAASAAUAAAAAAAAAAAATAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAABAAYAAAAAAAAAAAACAAYAAAAEAAAAAAADAAYAAAACAAAAAAAEAAYAAAACAAAAAAAFAAYAAAABAAAAAAAGAAYAAAAAAAAAAAAHAAYAAAAAAAAAAAAIAAYAAAAAAAAAAAAJAAYAAAAAAAAAAAAKAAYAAAAAAAAAAAALAAYAAAAAAAAAAAAMAAYAAAAAAAAAAAANAAYAAAAAAAAAAAAOAAYAAAAEAAAAAAAPAAYAAAACAAAAAAAQAAYAAAACAAAAAAARAAYAAAABAAAAAAASAAYAAAAAAAAAAAATAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAABAAcAAAAAAAAAAAACAAcAAAAEAAAAAAADAAcAAAACAAAAAAAEAAcAAAACAAAAAAAFAAcAAAABAAAAAAAGAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAIAAcAAAAAAAAAAAAJAAcAAAAAAAAAAAAKAAcAAAAAAAAAAAALAAcAAAAAAAAAAAAMAAcAAAAAAAAAAAANAAcAAAAAAAAAAAAOAAcAAAAEAAAAAAAPAAcAAAACAAAAAAAQAAcAAAACAAAAAAARAAcAAAABAAAAAAASAAcAAAAAAAAAAAATAAcAAAAAAAAAAAAAAAgAAAAAAAAAAAABAAgAAAAAAAAAAAACAAgAAAAEAAAAAAADAAgAAAACAAAAAAAEAAgAAAACAAAAAAAFAAgAAAABAAAAAAAGAAgAAAAAAAAAAAAHAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAAJAAgAAAAAAAAAAAAKAAgAAAAAAAAAAAALAAgAAAAAAAAAAAAMAAgAAAAAAAAAAAANAAgAAAAAAAAAAAAOAAgAAAAEAAAAAAAPAAgAAAACAAAAAAAQAAgAAAACAAAAAAARAAgAAAABAAAAAAASAAgAAAAAAAAAAAATAAgAAAAAAAAAAAAAAAkAAAAAAAAAAAABAAkAAAAAAAAAAAACAAkAAAAEAAAAAAADAAkAAAACAAAAAAAEAAkAAAACAAAAAAAFAAkAAAABAAAAAAAGAAkAAAAAAAAAAAAHAAkAAAAAAAAAAAAIAAkAAAAAAAAAAAAJAAkAAAAAAAAAAAAKAAkAAAAAAAAAAAALAAkAAAAAAAAAAAAMAAkAAAAAAAAAAAANAAkAAAAAAAAAAAAOAAkAAAAEAAAAAAAPAAkAAAACAAAAAAAQAAkAAAACAAAAAAARAAkAAAABAAAAAAASAAkAAAAAAAAAAAATAAkAAAAAAAAAAAAAAAoAAAAAAAAAAAABAAoAAAAAAAAAAAACAAoAAAAEAAAAAAADAAoAAAACAAAAAAAEAAoAAAACAAAAAAAFAAoAAAABAAAAAAAGAAoAAAAAAAAAAAAHAAoAAAAAAAAAAAAIAAoAAAAAAAAAAAAJAAoAAAAAAAAAAAAKAAoAAAAAAAAAAAALAAoAAAAAAAAAAAAMAAoAAAAAAAAAAAANAAoAAAAAAAAAAAAOAAoAAAAEAAAAAAAPAAoAAAACAAAAAAAQAAoAAAACAAAAAAARAAoAAAABAAAAAAASAAoAAAAAAAAAAAATAAoAAAAAAAAAAAAAAAsAAAAGAAIAAAABAAsAAAAGAAIAAAACAAsAAAAGAAIAAAADAAsAAAAGAAIAAAAEAAsAAAAGAAIAAAAFAAsAAAAGAAIAAAAGAAsAAAAGAAIAAAAHAAsAAAAGAAIAAAAIAAsAAAAGAAIAAAAJAAsAAAAGAAIAAAAKAAsAAAAGAAIAAAALAAsAAAAGAAIAAAAMAAsAAAAGAAIAAAANAAsAAAAGAAIAAAAOAAsAAAAGAAIAAAAPAAsAAAAGAAIAAAAQAAsAAAAGAAIAAAARAAsAAAAGAAIAAAASAAsAAAAGAAIAAAATAAsAAAAGAAIAAAA=")
 tile_set = SubResource("TileSet_ytr4m")
 
-[node name="Centro" type="CenterContainer" parent="."]
+[node name="Centro" type="CenterContainer" parent="." unique_id=430205566]
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="Painel" type="PanelContainer" parent="Centro"]
+[node name="Painel" type="PanelContainer" parent="Centro" unique_id=118597159]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_l48gv")
 
-[node name="Caixa" type="VBoxContainer" parent="Centro/Painel"]
+[node name="Caixa" type="VBoxContainer" parent="Centro/Painel" unique_id=916434095]
 layout_mode = 2
 theme_override_constants/separation = 6
 
-[node name="Titulo" type="HBoxContainer" parent="Centro/Painel/Caixa"]
+[node name="Titulo" type="HBoxContainer" parent="Centro/Painel/Caixa" unique_id=1296223892]
 layout_mode = 2
 theme_override_constants/separation = 0
 alignment = 1
 
-[node name="Letra0" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra0" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=1182950718]
 layout_mode = 2
 texture = SubResource("AtlasTexture_ecwwl")
 
-[node name="Letra1" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra1" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=1103461797]
 layout_mode = 2
 texture = SubResource("AtlasTexture_kk3ma")
 
-[node name="Letra2" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra2" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=909894093]
 layout_mode = 2
 texture = SubResource("AtlasTexture_nrnbx")
 
-[node name="Letra3" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra3" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=1838423873]
 layout_mode = 2
 texture = SubResource("AtlasTexture_iqepy")
 
-[node name="Espaco4" type="Control" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Espaco4" type="Control" parent="Centro/Painel/Caixa/Titulo" unique_id=1664877078]
 custom_minimum_size = Vector2(6, 16)
 layout_mode = 2
 
-[node name="Letra5" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra5" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=1000066828]
 layout_mode = 2
 texture = SubResource("AtlasTexture_h1wq0")
 
-[node name="Espaco6" type="Control" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Espaco6" type="Control" parent="Centro/Painel/Caixa/Titulo" unique_id=1311086625]
 custom_minimum_size = Vector2(6, 16)
 layout_mode = 2
 
-[node name="Letra7" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra7" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=978838663]
 layout_mode = 2
 texture = SubResource("AtlasTexture_dwrpx")
 
-[node name="Letra8" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra8" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=1847104545]
 layout_mode = 2
 texture = SubResource("AtlasTexture_g7jxm")
 
-[node name="Letra9" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra9" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=152647049]
 layout_mode = 2
 texture = SubResource("AtlasTexture_jspdm")
 
-[node name="Letra10" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra10" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=1878563880]
 layout_mode = 2
 texture = SubResource("AtlasTexture_oxnod")
 
-[node name="Letra11" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra11" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=559423423]
 layout_mode = 2
 texture = SubResource("AtlasTexture_gd0jp")
 
-[node name="Letra12" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra12" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=1504747209]
 layout_mode = 2
 texture = SubResource("AtlasTexture_4ndjb")
 
-[node name="Letra13" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra13" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=1162808071]
 layout_mode = 2
 texture = SubResource("AtlasTexture_3ls4m")
 
-[node name="Letra14" type="TextureRect" parent="Centro/Painel/Caixa/Titulo"]
+[node name="Letra14" type="TextureRect" parent="Centro/Painel/Caixa/Titulo" unique_id=1381904024]
 layout_mode = 2
 texture = SubResource("AtlasTexture_5h80m")
 
-[node name="Subtitulo" type="Label" parent="Centro/Painel/Caixa"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 10
-theme_override_colors/font_color = Color(1, 0.827451, 0.41960785, 1)
-text = "Tutorial 06 - Mapa e Câmera"
-horizontal_alignment = 1
-
-[node name="Fase1" type="Button" parent="Centro/Painel/Caixa"]
+[node name="Fase1" type="Button" parent="Centro/Painel/Caixa" unique_id=2133103200]
 custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 11
 theme_override_styles/normal = SubResource("StyleBoxFlat_w25hu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_td6mg")
 theme_override_styles/hover = SubResource("StyleBoxFlat_td6mg")
 theme_override_styles/focus = SubResource("StyleBoxFlat_td6mg")
-theme_override_font_sizes/font_size = 11
 text = "Fase 1"
 
-[node name="Fase2" type="Button" parent="Centro/Painel/Caixa"]
+[node name="Fase2" type="Button" parent="Centro/Painel/Caixa" unique_id=1944421370]
 custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 11
 theme_override_styles/normal = SubResource("StyleBoxFlat_w25hu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_td6mg")
 theme_override_styles/hover = SubResource("StyleBoxFlat_td6mg")
 theme_override_styles/focus = SubResource("StyleBoxFlat_td6mg")
-theme_override_font_sizes/font_size = 11
 text = "Fase 2"
 
 [connection signal="pressed" from="Centro/Painel/Caixa/Fase1" to="." method="_on_fase_1_pressed"]
